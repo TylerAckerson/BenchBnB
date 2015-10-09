@@ -1,0 +1,16 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#content {
+  border: 3px solid blue;
+}
+
+.index {
+  border: 2px solid green;
+}
+
+.map {
+  border: 2px solid red;
+  width: 500px;
+  height: 500px;
+}
