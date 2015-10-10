@@ -9,7 +9,6 @@ Index = React.createClass({
 
   componentDidMount: function() {
     BenchStore.addChangeListener(this._onChange);
-    ApiUtil.fetchBenches();
   },
 
   componentWillUnmount: function() {
@@ -17,14 +16,15 @@ Index = React.createClass({
   },
 
   render: function () {
-    console.log("bench length: " + this.state.benches.length);
     return (
-      <div className="index">
+      <ul className="index">
           { this.state.benches.map(function(bench){
-                return <span>{bench.description}</span>;
+                return <li key={bench.id}>{ "Description: " + bench.description +
+                                            ", Location: " + bench.lat
+                                            + ", " + bench.lng} </li>;
             })
           }
-      </div>
+      </ul>
     );
   }
 });

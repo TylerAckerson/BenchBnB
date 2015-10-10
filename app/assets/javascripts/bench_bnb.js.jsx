@@ -3,8 +3,7 @@ $(function() {
 
   React.render(
     <div>
-      <Index />
-      <Map />
+      <Search />
     </div>,
     document.getElementById('content')
   );
