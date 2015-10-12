@@ -88,3 +88,32 @@ h3 {
 .benchdetail{
   margin-left: 20px;
 }
+
+.new-bench {
+	border: 2px cornflowerblue solid;
+	padding: 5px;
+	margin: 5px;
+	width: 230px;
+	text-align: center;
+}
+
+.new-bench  h3 {
+  height: auto;
+  width: auto;
+  padding: 2px;
+  font-size: 30px;
+  margin: 5px 10px 10px 10px;
+  text-align: center;
+}
+
+.form-control {
+	width: 200px;
+}
+
+.form-label {
+	text-align: left;
+}
+
+.btn {
+	margin: 10px;
+}
