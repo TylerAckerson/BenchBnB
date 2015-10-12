@@ -17,14 +17,20 @@ Index = React.createClass({
 
   render: function () {
     return (
-      <ul className="index">
-          { this.state.benches.map(function(bench){
-                return <li key={bench.id}>{ "Description: " + bench.description +
-                                            ", Location: " + bench.lat
-                                            + ", " + bench.lng} </li>;
-            })
-          }
-      </ul>
+      <div>
+        <h3>Benches</h3>
+        <ul className="index" id="index">
+            { this.state.benches.map(function(bench){
+                  return <ul className="bench" key={bench.id}>
+                            <label className="benchlabel">Description</label>
+                              <li className="benchdetail">{bench.description}</li>
+                            <label className="benchlabel">Location</label>
+                              <li className="benchdetail">{bench.lat + ", " + bench.lng}</li>
+                         </ul>
+              })
+            }
+        </ul>
+      </div>
     );
   }
 });

@@ -14,10 +14,10 @@ class Bench < ActiveRecord::Base
   validate :description, :lat, :lng
 
   def self.in_bounds(bounds)
-    northEastLat = (bounds["northEast"]["lat"]).to_i
-    southWestLat = (bounds["southWest"]["lat"]).to_i
-    northEastLng = (bounds["northEast"]["lng"]).to_i
-    southWestLng = (bounds["southWest"]["lng"]).to_i
+    northEastLat = (bounds["northEast"]["lat"]).to_f
+    southWestLat = (bounds["southWest"]["lat"]).to_f
+    northEastLng = (bounds["northEast"]["lng"]).to_f
+    southWestLng = (bounds["southWest"]["lng"]).to_f
 
     Bench.all.select do |bench|
       (bench.lat <= northEastLat && bench.lat >= southWestLat) &&

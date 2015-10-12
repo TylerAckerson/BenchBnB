@@ -35,6 +35,15 @@ Map = React.createClass({
     this.setState( { benches: BenchStore.all() });
     this._mapBenches();
   },
+  // createImage: function(url){
+  //   var image = {
+  //     url: url,
+  //     size: new google.maps.Size(32, 32),
+  //     // origin: new google.maps.Point(0,0),
+  //     anchor: new google.maps.Point(0, 32)
+  //   };
+  //   return image;
+  // },
   _mapBenches: function(){
     this.state.benches.map(function(bench) {
       var latLng = new google.maps.LatLng(bench.lat, bench.lng);
@@ -42,7 +51,8 @@ Map = React.createClass({
       var marker = new google.maps.Marker({
           position: latLng,
           map: this.map,
-          title: bench.description
+          title: bench.description,
+          // icon: this.createImage("/assets/logo.png")
       });
 
     }.bind(this));
