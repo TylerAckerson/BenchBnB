@@ -17,9 +17,9 @@ Index = React.createClass({
 
   render: function () {
     return (
-      <div>
+      <div className="index" id="index">
         <h3>Benches</h3>
-        <ul className="index" id="index">
+        <ul>
             { this.state.benches.map(function(bench){
                   return (<ul className="bench" key={bench.id}>
                             <label className="benchlabel">Description</label>
