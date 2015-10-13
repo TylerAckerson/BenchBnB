@@ -9,6 +9,7 @@ Search = React.createClass({
       <div>
         <Map onClick={this.handleMapClick}/>
         <Index />
+        <Filter />
       </div>
     );
   }

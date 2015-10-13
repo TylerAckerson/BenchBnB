@@ -36,7 +36,7 @@ BenchForm = React.createClass({
 
   render: function () {
     return (
-      <div className="new-bench">
+      <div className="new-bench form">
         <h3>New Bench</h3>
         <form id="new-bench-form"
               onSubmit={this.handleSubmit}>

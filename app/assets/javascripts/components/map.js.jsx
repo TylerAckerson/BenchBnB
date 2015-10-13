@@ -19,12 +19,12 @@ Map = React.createClass({
 
       var bounds = {
         bounds: {
-          "northEast": {"lat": String(latLngBounds.Qa.J), "lng": String(latLngBounds.Ma.J) },
-          "southWest": {"lat": String(latLngBounds.Qa.j), "lng": String(latLngBounds.Ma.j) }
+          "northEast": {"lat": String(latLngBounds.La.I), "lng": String(latLngBounds.Pa.I) },
+          "southWest": {"lat": String(latLngBounds.La.j), "lng": String(latLngBounds.Pa.j) }
         }
       };
 
-      ApiUtil.fetchBenches(bounds);
+      FilterActions.receiveFilters(bounds);
     }.bind(this.map));
 
 
@@ -65,6 +65,7 @@ Map = React.createClass({
 
     }.bind(this));
   },
+
   handleClick: function(e) {
     var lat = e.latLng.J;
     var lng = e.latLng.M;

@@ -5,5 +5,4 @@ FilterActions = {
       filter: filter
     });
   },
-
 };

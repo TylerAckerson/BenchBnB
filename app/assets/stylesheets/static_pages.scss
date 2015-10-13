@@ -59,7 +59,8 @@ h3 {
 
 div > h3 {
   width: auto;
-	margin: auto;
+	margin: 8px;
+	text-align: center;
 	padding: 5px;
 	border-bottom: 2px gray solid;
 }
@@ -73,15 +74,15 @@ div > h3 {
 #map {
 	height: 100%;
 	align-items: left;
-  width: 700px;
+  width: 750px;
   height: 700px;
   float: left;
   margin: 20px;
 	border: 5px solid gray;
 }
 
-#index, .new-bench {
-  width: 300px;
+#index, .new-bench, .form {
+  width: 500px;
 	height: 700px;
   float: left;
   margin: 20px;
@@ -89,9 +90,11 @@ div > h3 {
 	background-color: white;
 	opacity: 0.8;
 	border: 5px solid gray;
+	overflow: auto;
 }
 
 .bench {
+	width: auto;
   margin: auto;
   border-bottom: 2px solid wheat;
   padding: 10px;
@@ -112,13 +115,14 @@ div > h3 {
 .new-bench {
 	border: 2px cornflowerblue solid;
 	padding: 5px;
-	margin: 5px;
+	margin: 10px auto;
 	width: 250px;
 	height: 250px;
 	text-align: center;
+	float: left
 }
 
-.new-bench  h3 {
+.form  h3 {
   height: auto;
   width: auto;
   padding: 2px;
@@ -130,6 +134,7 @@ div > h3 {
 .form-control {
 	width: 200px;
 	float: left;
+	margin-bottom: 10px;
 }
 
 .form-label {
@@ -142,7 +147,11 @@ div > h3 {
 	outline-color: wheat;
 }
 
-.btn {
-	margin: 10px;
-	margin-top: 30px;
+.seating-filter {
+	width: 300px;
+	height: 160px;
+}
+
+.seating-filter .form-control {
+	width: 150px;
 }

@@ -8,10 +8,6 @@
     _benches = benches;
   };
 
-  var addBench = function(bench){
-    _benches.push(bench);
-  };
-
   root.BenchStore = $.extend({}, EventEmitter.prototype, {
     all: function() {
       return _benches.slice(0);
@@ -29,7 +25,7 @@
           BenchStore.emit(CHANGE_EVENT);
           break;
         case (BenchConstants.NEW_BENCH_RECEIVED):
-          addBench(payload.bench);
+          resetBenches(payload.benches);
           BenchStore.emit(CHANGE_EVENT);
           break;
       }
