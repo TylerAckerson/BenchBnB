@@ -19,7 +19,7 @@ Filter = React.createClass({
   render: function () {
     return (
       <div className="seating-filter form">
-        <h3>Seating Filter</h3>
+        <h3>Filter</h3>
 
         <form id="seating-filter-form">
 

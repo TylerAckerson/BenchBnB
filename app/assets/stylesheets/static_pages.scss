@@ -74,7 +74,7 @@ div > h3 {
 #map {
 	height: 100%;
 	align-items: left;
-  width: 750px;
+  width: 500px;
   height: 700px;
   float: left;
   margin: 20px;
@@ -82,7 +82,7 @@ div > h3 {
 }
 
 #index, .new-bench, .form {
-  width: 500px;
+  width: 325px;
 	height: 700px;
   float: left;
   margin: 20px;
@@ -122,11 +122,11 @@ div > h3 {
 	float: left
 }
 
-.form  h3 {
+h3 {
   height: auto;
   width: auto;
   padding: 2px;
-  font-size: 30px;
+  font-size: 20px;
   margin: 5px 10px 20px 10px;
   text-align: center;
 }
@@ -148,7 +148,7 @@ div > h3 {
 }
 
 .seating-filter {
-	width: 300px;
+	width: 215px;
 	height: 160px;
 }
 

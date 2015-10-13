@@ -24,6 +24,8 @@ Map = React.createClass({
         }
       };
 
+      console.log(bounds);
+      debugger;
       FilterActions.receiveFilters(bounds);
     }.bind(this.map));
 
